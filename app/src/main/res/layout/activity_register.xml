@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F8A9D"
+    android:weightSum="1">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="17dp"
+        android:background="#3F8A9D"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/btnback" />
+
+    <ImageView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/title" />
+
+    <EditText
+        android:id="@+id/txt_registerName"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.04"
+        android:background="@drawable/formlogin"
+        android:hint="Name"
+        android:textAlignment="center"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/txt_registerEmail"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.05"
+        android:hint="Email"
+        android:background="@drawable/formlogin"
+        android:textAlignment="center"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/txt_registerTelephone"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.05"
+        android:hint="Telephone"
+        android:background="@drawable/formlogin"
+        android:textAlignment="center"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/txt_registerPassword"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.07"
+        android:hint="Password"
+        android:background="@drawable/formlogin"
+        android:textAlignment="center"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:ellipsize="start"
+        android:text="REGISTER"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+</LinearLayout>

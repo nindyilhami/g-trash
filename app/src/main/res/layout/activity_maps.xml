@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="0.02">
+
+        <HorizontalScrollView
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="0.015"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/txt_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.95"
+                android:text="Choose Location"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteTextView"
+                android:textSize="16dp" />
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/btn_nearMe"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginRight="15dp"
+            android:hint="NEAR ME"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:context=".activity.MapsActivity" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#3F8A9D">
+
+        <ImageButton
+            android:id="@+id/btn_maps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3F8A9D"
+            android:padding="2dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btnmapsoff" />
+
+        <ImageButton
+            android:id="@+id/btn_sticker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#3F8A9D"
+            android:padding="2dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btnstickeroff" />
+
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="#3F8A9D"
+            android:padding="2dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btnprofileoff" />
+
+    </FrameLayout>
+</LinearLayout>

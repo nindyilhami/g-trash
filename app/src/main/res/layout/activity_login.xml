@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F8A9D"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/title" />
+
+    <EditText
+        android:id="@+id/txt_loginEmail"
+        android:layout_width="288dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="30dp"
+        android:ellipsize="start"
+        android:background="@drawable/formlogin"
+        android:hint="Email"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/txt_loginPassword"
+        android:layout_width="289dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/formlogin"
+        android:ellipsize="start"
+        android:hint="Password"
+        android:textAlignment="center"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/button"
+        android:ellipsize="start"
+        android:textStyle="bold"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Punya Akun?"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="98dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="150dp"
+            android:background="#3F8A9D"
+            android:text="REGISTER"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+    </FrameLayout>
+
+</LinearLayout>
